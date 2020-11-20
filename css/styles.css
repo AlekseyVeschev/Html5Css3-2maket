@@ -72,14 +72,16 @@ body {
     color: #ffffff;
     text-decoration: none;
     margin: 8px 16px;
+    transition: 0.5s;
 }
 
 .header-navbar-link:hover {
     color: #c7b299;
 }
 
-.header-navbar-link-icon {
+.header-navbar-link-icon img {
     margin-left: 32px;
+    transition: 1s;
 }
 
 .header-navbar-link-icon:hover img {
@@ -106,6 +108,7 @@ body {
     font-size: 82px;
     color: #ffffff;
     opacity: 0.5;
+    transition: 1s;
 }
 
 .header-arrow-left {
@@ -151,13 +154,12 @@ body {
     text-transform: uppercase;
     color: #ffffff;
     margin-top: 32px;
-    transition: 1s;
+    transition: 1.5s;
 }
 
 .header-button:hover {
     background-color: #ffffff;
     color: #998675;
-    transform: rotateY(360deg);
 }
 
 .header-buttons-dots {
@@ -165,7 +167,7 @@ body {
     max-width: 12%;
     margin: 0 auto;
     justify-content: space-around;
-}
+   }
 
 .header-button-dot {
     display: flex;
@@ -177,6 +179,7 @@ body {
     border: 4px solid transparent;
     border-radius: 50%;
     padding: 0;
+    transition: 0.5s;
 }
 
 .header-button-dot:hover {
@@ -206,7 +209,7 @@ body {
 .directions-icon {
     font-size: 48px;
     color: #555555;
-    transition: 0.5s;
+    transition: 1.3s;
 }
 
 .directions-title {
@@ -214,7 +217,7 @@ body {
     font-weight: 600;
     color: #555555;
     margin-top: 24px;
-    transition: 0.5s;
+    transition: 0.8s;
 }
 
 .directions-text {
@@ -232,7 +235,7 @@ body {
     border: none;
     margin-top: 32px;
     max-width: 70px;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .directions-card:hover .directions-title {
@@ -286,20 +289,24 @@ body {
     bottom: 0;
     transition: 1s;
 }
-.idea-img-left:hover{
+
+.idea-img-left:hover {
     z-index: 2;
-     transform: translateX(33%) translateY(-10%) scaleY(1.20);
+    transform: translateX(33%) translateY(-10%) scaleY(1.20);
 }
+
 .idea-img-right {
     position: absolute;
     right: -24px;
     bottom: 0;
     transition: 1s;
 }
-.idea-img-right:hover{
+
+.idea-img-right:hover {
     z-index: 2;
     transform: translateX(-33%) translateY(-10%) scaleY(1.20);
 }
+
 .theme {
     background-color: #f4f5f8;
     background-image: linear-gradient(90.0deg, #211b19 0%, #4e3427 100%);
@@ -435,7 +442,7 @@ body {
 .project-card-icon-link {
     color: #ffffff;
     text-decoration: none;
-   }
+}
 
 .project-card:hover .overlay {
     opacity: 1;
@@ -549,11 +556,13 @@ body {
     font-size: 64px;
     transition: 1s;
 }
-.presentation-button:hover{
+
+.presentation-button:hover {
     background-color: #ffffff;
     color: #000000;
     transform: rotate(720deg);
 }
+
 .presentation-title {
     font-size: 30px;
     font-weight: 500;
@@ -634,7 +643,12 @@ body {
     text-align: center;
     flex-wrap: wrap;
 }
-
+.statistics-card{
+    transition: 1s;
+}
+.statistics-card:hover{
+    transform: rotateY(360deg);
+}
 .statistics-total {
     font-size: 48px;
     line-height: 36px;
@@ -847,33 +861,40 @@ body {
 
 .logos-logo1-img {
     margin: 32px;
-    transition: 2s;
+    transition: 2.5s;
 }
+
 .logos-logo2-img {
     margin: 32px;
     transition: 2s;
 }
+
 .logos-logo3-img {
     margin: 32px;
-    transition: 2s;
+    transition: 1s;
 }
+
 .logos-logo4-img {
     margin: 32px;
-    transition: 2s;
+    transition: 4s;
 }
 
 .logos-logo1-img:hover {
     transform: scale(1.5) rotate(360deg);
 }
+
 .logos-logo2-img:hover {
     transform: rotateX(360deg);
 }
+
 .logos-logo3-img:hover {
     transform: rotateY(360deg) skewX(40deg);
 }
+
 .logos-logo4-img:hover {
     transform: scale(1.5) translateY(30%);
 }
+
 .information {
     background-color: #191919;
     padding: 64px 0;
@@ -918,6 +939,7 @@ body {
     font-weight: 300;
     color: #363636;
     margin: 0;
+    transition: 1.3s;
 }
 
 
@@ -934,6 +956,7 @@ body {
     font-weight: 300;
     color: #555555;
     margin: 8px 0;
+    transition: 0.3s;
 }
 
 .information-card-post:hover .information-card-post-text {
@@ -952,6 +975,17 @@ body {
     max-width: 300px;
 }
 
+.information-card-img:hover {
+    transform: scale(1.60) translateX(20%) translateX(-55%);
+    border-radius: 5%;
+
+}
+
+.information-card-img-left:hover {
+    transform: scale(1.60) translateX(20%) translateX(15%);
+    border-radius: 5%;
+}
+
 .info-card-twitter-link {
     color: #00bff3;
     text-decoration: none;
@@ -965,8 +999,13 @@ body {
     margin-bottom: 8px;
 }
 
+.information-card-img {
+    transition: 1s;
+}
+
 .information-card-img-left {
     margin-right: 8px;
+    transition: 1s;
 }
 
 .footer {
@@ -1000,6 +1039,7 @@ body {
 .footer-link {
     text-decoration: none;
     color: #252525;
+    transition: 0.5s;
 }
 
 .footer-link:hover {

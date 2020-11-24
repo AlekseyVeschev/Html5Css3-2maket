@@ -69,6 +69,8 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    right: 0;
+    top: 0;
 }
 
 .header-navbar-selector {
@@ -293,7 +295,7 @@ body {
     border: none;
     margin-top: 32px;
     max-width: 70px;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .directions-card:hover .directions-title {
@@ -332,38 +334,38 @@ body {
 }
 
 .idea-images {
-    position: relative;
     display: flex;
     justify-content: center;
+    align-items: flex-end;
 }
 
 .idea-img-center {
     z-index: 1;
 }
 
-.idea-img-left {
-    position: absolute;
-    left: -24px;
-    bottom: 0;
-    transition: 1s;
+
+@media (min-width: 1160px) {
+    .idea-img-left {
+        transform: translateX(76%);
+        transition: transform 1s;
+    }
+
+    .idea-img-right {
+        transform: translateX(-76%);
+        transition: transform 1s;
+    }
+
+    .idea-img-left:hover {
+        z-index: 3;
+        transform: translateX(100%) translateY(-10%) scaleY(1.20);
+    }
+
+    .idea-img-right:hover {
+        z-index: 2;
+        transform: translateX(-100%) translateY(-10%) scaleY(1.20);
+    }
 }
 
-.idea-img-left:hover {
-    z-index: 2;
-    transform: translateX(33%) translateY(-10%) scaleY(1.20);
-}
-
-.idea-img-right {
-    position: absolute;
-    right: -24px;
-    bottom: 0;
-    transition: 1s;
-}
-
-.idea-img-right:hover {
-    z-index: 2;
-    transform: translateX(-33%) translateY(-10%) scaleY(1.20);
-}
 
 .theme {
     background-color: #f4f5f8;
@@ -1152,12 +1154,18 @@ body {
         max-width: 100%;
     }
 
-    .header-navbar-selector {
-        display: block;
+    .header-top {
+        position: relative;
     }
 
     .header-navbar {
-        display: none;
+        display: flex;
+        flex-direction: column-reverse;
+        position: absolute;
+    }
+
+    .header-navbar-icon {
+        margin: 16px;
     }
 
     .directions {
@@ -1178,14 +1186,29 @@ body {
         flex-direction: column;
     }
 
-    .idea-img-right, .idea-img-left, .idea-img-center {
-        position: static;
+    .idea-img-right {
         max-width: 100%;
+        order: 2;
     }
-
+    .idea-img-left{
+        max-width: 100%;
+        order: 1;
+    }
+    .idea-img-center{
+        max-width: 100%;
+        order: 3;
+    }
 }
 
 @media (max-width: 767px) {
+    .header-navbar {
+        display: none;
+    }
+
+    .header-navbar-selector {
+        display: block;
+    }
+
     .theme-block {
         justify-content: center;
     }

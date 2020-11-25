@@ -473,12 +473,13 @@ body {
 }
 
 .project-card {
-    min-width: 370px;
-    margin-top: 32px;
+    min-width: 300px;
+    margin: 32px 16px;
     position: relative;
 }
 
 .project-card-img {
+    width: 100%;
     display: block;
 }
 
@@ -873,6 +874,7 @@ body {
 }
 
 .posts-img {
+    width: 100%;
     display: block;
 }
 

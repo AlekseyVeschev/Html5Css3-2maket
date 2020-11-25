@@ -100,7 +100,6 @@ body {
 .header-navbar-icon {
     width: 24px;
     fill: #ffffff;
-    margin-left: 32px;
     transition: 1s;
 }
 
@@ -790,8 +789,7 @@ body {
     font-weight: 300;
     color: #8c8c8c;
     text-align: center;
-    margin-bottom: 40px;
-}
+  }
 
 .posts-cards {
     display: flex;
@@ -802,6 +800,7 @@ body {
 .posts-card {
     max-width: 370px;
     position: relative;
+    margin: 32px 16px;
 }
 
 .posts-overlay {
@@ -915,7 +914,7 @@ body {
 .posts-buttons-wrapper {
     display: flex;
     justify-content: space-around;
-    margin: 40px auto 0;
+    margin: 0 auto;
     max-width: 12%;
 }
 
@@ -1164,10 +1163,7 @@ body {
         display: flex;
         flex-direction: column-reverse;
         position: absolute;
-    }
-
-    .header-navbar-icon {
-        margin: 16px;
+        align-items: flex-end;
     }
 
     .directions {
@@ -1192,11 +1188,13 @@ body {
         max-width: 100%;
         order: 2;
     }
-    .idea-img-left{
+
+    .idea-img-left {
         max-width: 100%;
         order: 1;
     }
-    .idea-img-center{
+
+    .idea-img-center {
         max-width: 100%;
         order: 3;
     }
